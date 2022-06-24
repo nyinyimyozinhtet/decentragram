@@ -20,13 +20,13 @@ class App extends Component {
     return (
       <div>
         <Navbar account={this.state.account} />
-        { this.state.loading
+        {this.state.loading
           ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
           : <Main
-            // Code...
-            />
-          }
+          // Code...
+          />
         }
+
       </div>
     );
   }
