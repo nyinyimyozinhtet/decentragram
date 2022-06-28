@@ -62,9 +62,9 @@ contract Decentragram {
     // Tip Images
     function tipImageOwner(uint256 _id) public payable {
         //Make sure the id is valid
-        require(_id > 0 && id_ <= imageCount, "image is invalid");
+        require(_id > 0 && _id <= imageCount, "image is invalid");
         // Fetch the image
-        Image memory _image = image[_id];
+        Image memory _image = images[_id];
         // Fetch the author
         address payable _author = _image.author;
         // Pay the author by sending them Ether
