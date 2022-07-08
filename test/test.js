@@ -1,6 +1,5 @@
 const { assert } = require('chai')
 const { default: Web3 } = require('web3')
-
 const Decentragram = artifacts.require('./Decentragram.sol')
 
 require('chai')
